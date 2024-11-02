@@ -9,7 +9,7 @@ const RoomList: React.FC = () => {
   const roomData = {
     title: 'Deluxe King Room',
     images: [
-      image, // Replace these paths with actual paths or imported images
+      image, 
       image1,
       image,
       image1,

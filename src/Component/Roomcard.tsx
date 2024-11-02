@@ -27,7 +27,7 @@ const RoomCard: React.FC<RoomCardProps> = ({
     setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex === 0 ? totalImages - 1 : prevIndex - 1));
       setIsFlipping(false);
-    }, 500); // Adjust duration as needed
+    }, 500); 
   };
 
   const handleNext = () => {
@@ -40,7 +40,6 @@ const RoomCard: React.FC<RoomCardProps> = ({
 
   return (
     <div className="rounded-lg shadow-lg bg-white p-4 w-full max-w-xs sm:max-w-md mx-auto">
-      {/* Image carousel */}
       <div className="relative">
         <img
           src={images[currentIndex]}
@@ -51,26 +50,19 @@ const RoomCard: React.FC<RoomCardProps> = ({
           style={{ backfaceVisibility: 'hidden', perspective: '1000px' }}
         />
 
-        {/* Navigation and pagination */}
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex items-center space-x-4 bg-white bg-opacity-90 px-3 py-1 rounded-full text-gray-800 text-sm"
           style={{ minWidth: '160px', justifyContent: 'space-between' }}
         >
-          {/* Previous button */}
           <button onClick={handlePrev} className="text-gray-800 p-2 hover:bg-gray-200 rounded-full">
             <FaChevronLeft />
           </button>
-
-          {/* Pagination indicator */}
           <span className="whitespace-nowrap">{currentIndex + 1} / {totalImages}</span>
 
-          {/* Next button */}
           <button onClick={handleNext} className="text-gray-800 p-2 hover:bg-gray-200 rounded-full">
             <FaChevronRight />
           </button>
         </div>
       </div>
-
-      {/* Room information */}
       <div className="mt-4">
         <h3 className="font-semibold text-lg text-gray-900">{title}</h3>
         <div className="grid grid-cols-3 mt-2 text-gray-600">
@@ -82,8 +74,6 @@ const RoomCard: React.FC<RoomCardProps> = ({
           ))}
         </div>
       </div>
-
-      {/* Room availability and price */}
       <div className="mt-4 flex items-center justify-between text-sm">
         <span className="text-green-600 font-medium">{roomsLeft} rooms left</span>
         <a href={detailsLink} className="text-blue-500 no-underline">
@@ -91,7 +81,6 @@ const RoomCard: React.FC<RoomCardProps> = ({
         </a>
       </div>
 
-      {/* Reservation button */}
       <button className="mt-5 w-full border-2 text-black py-2 rounded-lg font-semibold text-center">
         Reserve for ₦{price.toLocaleString()}
       </button>
