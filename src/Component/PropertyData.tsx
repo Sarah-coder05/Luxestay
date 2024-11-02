@@ -1,4 +1,3 @@
-// PropertyData.ts
 import { PropertyCardProps } from "./Property";
 import house from './Asset/Image.png'
 
