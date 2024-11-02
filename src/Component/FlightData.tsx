@@ -1,9 +1,8 @@
-// flightData.ts
 
 import { FlightCardProps } from './FlightCard';
 
 export const flightData: FlightCardProps = {
-    airlineLogo: "https://via.placeholder.com/40",
+    airlineLogo: '',
     departureTime: "10:30am",
     arrivalTime: "2:45pm",
     from: "Abuja (ABV)",

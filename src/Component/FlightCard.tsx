@@ -33,7 +33,7 @@ const FlightCard: React.FC<FlightCardProps> = ({
     numBags
 }) => {
     return (
-        <div className="max-w-4xl w-full mx-auto bg-white border rounded-lg shadow-md p-6 space-y-4">
+        <div className="max-w-md md:max-w-4xl w-full mx-auto bg-white border rounded-lg shadow-md p-4 md:p-6 space-y-4">
             <div className="flex justify-between items-center">
                 <div className="flex items-center space-x-2">
                     {isBest && (
@@ -51,7 +51,7 @@ const FlightCard: React.FC<FlightCardProps> = ({
                     </button>
                 </div>
             </div>
-            <div className="flex space-x-6">
+            <div className="flex flex-row md:flex-row md:space-x-6 md:items-start">
                 <img src={airpiece} alt="Airline Logo" className="w-14 h-14" />
                 <div className="space-y-0">
                     <p className="text-lg font-semibold">{departureTime} – {arrivalTime}</p>
@@ -96,7 +96,7 @@ const FlightCard: React.FC<FlightCardProps> = ({
                         <MdLuggage className="w-5 h-5 text-gray-600" />
                         <span className="text-gray-600 ml-1">{numLuggage}</span> {/* Display numLuggage next to the luggage icon */}
                     </button>
-                    <button className="bg-blue-700 text-white px-6 py-1 rounded-lg">Select flight</button>
+                    <button className="bg-blue-700 text-white px-4 py-1 rounded-lg">Select flight</button>
                 </div>
             </div>
         </div>
