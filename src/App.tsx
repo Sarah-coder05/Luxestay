@@ -4,6 +4,9 @@ import RoomList from "./Component/RoomList";
 import PropertyCard from "./Component/Property";
 import { flightData } from "./Component/FlightData";
 import { propertyData } from "./Component/PropertyData";
+import HotelDetails from "./Component/HotelDetails";
+import Reviews from "./Component/Reviews";
+import PropertyPage from "./Component/PropertyPage";
 
 const App: React.FC = () => {
   return (
@@ -14,6 +17,12 @@ const App: React.FC = () => {
         {propertyData.map((property, index) => (
           <PropertyCard key={index} {...property} />
         ))}
+      </div>
+      <HotelDetails/>
+      <div className="p-6">
+        <h1 className="text-xl font-bold mb-4">Reviews</h1>
+        <Reviews/>
+        <PropertyPage/>
       </div>
     </div>
   );

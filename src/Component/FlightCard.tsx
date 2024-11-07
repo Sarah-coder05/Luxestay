@@ -20,7 +20,6 @@ export interface FlightCardProps {
 }
 
 const FlightCard: React.FC<FlightCardProps> = ({
-    airlineLogo,
     departureTime,
     arrivalTime,
     from,
@@ -90,11 +89,11 @@ const FlightCard: React.FC<FlightCardProps> = ({
                 <div className="flex items-center space-x-2">
                     <button className="border border-gray-300 p-1 rounded flex items-center">
                         <LiaShoppingBagSolid className="w-5 h-5 text-gray-600" />
-                        <span className="text-gray-600 ml-1">{numBags}</span> {/* Display numBags next to the shopping bag icon */}
+                        <span className="text-gray-600 ml-1">{numBags}</span> 
                     </button>
                     <button className="border border-gray-300 p-1 rounded flex items-center">
                         <MdLuggage className="w-5 h-5 text-gray-600" />
-                        <span className="text-gray-600 ml-1">{numLuggage}</span> {/* Display numLuggage next to the luggage icon */}
+                        <span className="text-gray-600 ml-1">{numLuggage}</span> 
                     </button>
                     <button className="bg-blue-700 text-white px-4 py-1 rounded-lg">Select flight</button>
                 </div>
