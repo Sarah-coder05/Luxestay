@@ -9,6 +9,7 @@ import Reviews from "./Component/Reviews";
 import PropertyPage from "./Component/PropertyPage";
 import LandingPage from "./Component/LandingPage";
 import { sampleData } from "./Component/LandingPageProps";
+import ReservationData from "./Component/ReservationData";
 
 const App: React.FC = () => {
   return (
@@ -27,6 +28,7 @@ const App: React.FC = () => {
         <PropertyPage/>
       </div>
       <LandingPage{...sampleData}/>
+      <ReservationData/>
     </div>
   );
 };
