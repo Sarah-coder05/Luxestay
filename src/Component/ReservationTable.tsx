@@ -1,4 +1,3 @@
-// src/components/ReservationTable.tsx
 import React from "react";
 import frame from './Asset/Frame 924.png'
 import { PiPrinterThin } from "react-icons/pi";
@@ -64,7 +63,6 @@ const ReservationTable: React.FC<ReservationTableProps> = ({
                   </a>
                 </td>
                 <td className="p-3 gap-3 flex items-center">
-                  {/* Image for property */}
                   <img src={frame} alt="Property" />
                   {reservation.property}
                 </td>

@@ -1,4 +1,4 @@
-// src/types/Reservation.ts
+
 export type Reservation = {
     bookingNumber: string;
     property: string;

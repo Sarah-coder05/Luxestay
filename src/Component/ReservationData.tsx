@@ -1,4 +1,4 @@
-// src/components/ReservationData.tsx
+
 import React, { useState } from "react";
 import ReservationTable from "./ReservationTable";
 import { Reservation } from "./Reservation";
@@ -59,7 +59,7 @@ const mockReservations: Reservation[] = [
 
 const ReservationData: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = 10; // Set the total number of pages here
+  const totalPages = 10; 
 
   const handlePreviousPage = () => {
     setCurrentPage((prev) => Math.max(prev - 1, 1));
