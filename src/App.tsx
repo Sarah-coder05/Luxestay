@@ -29,6 +29,7 @@ import PaymentsAndPayout from "./Component/PaymentsAndPayouts";
 import FeedbackSection from "./Component/FeedbackSection";
 import { feedbackGiven, feedbackReceived } from "./Component/FeedbackData";
 import Notifications from "./Component/Notifications";
+import PreviewAndCheckout from "./Component/PreviewAndCheckout";
 
 
 const App: React.FC = () => {
@@ -90,6 +91,7 @@ const App: React.FC = () => {
         </Routes>
           <Notifications/>
       </Router>
+      <PreviewAndCheckout/>
     </div>
     
   );

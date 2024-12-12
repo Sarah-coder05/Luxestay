@@ -2,7 +2,7 @@ import React from "react";
 import AccountHeader from "./AccountHeader";
 import Sidebar from "./SideBar";
 import { payoutMethods, handleCountrySelect } from "./Data";
-import BottomAccountSettings from "./BottomAccountSettings";
+// import BottomAccountSettings from "./BottomAccountSettings";
 import PaymentHistory from "./PaymentHistory";
 import PayoutMethods from "./PayoutMethods";
 import InfoBox from "./InfoBox";
@@ -10,10 +10,7 @@ import InfoBox from "./InfoBox";
 const PaymentsAndPayout: React.FC = () => {
   
 
-  const handleDeactivateAccount = () => {
-    console.log("Account deactivated");
-    // Add your account deactivation logic here
-  };
+
 
   return (
     <div className="min-h-screen bg-gray-100 p-4 sm:p-6 space-y-6">
